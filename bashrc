@@ -5,6 +5,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+export PS1="[\u@\h \W]\$ "
 export EDITOR=vim
 alias docker="/usr/local/bin/docker_wrap.sh"
 alias d="docker"
